@@ -1,0 +1,32 @@
+.header {
+  position: relative;
+  height: 200px;
+}
+
+.header__img-1 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../assets/header-images/header-img-1.jpg");
+  max-height: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+}
+
+.header__img-2 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../assets/header-images/header-img-2.jpg");
+  position: absolute;
+  right: 0;
+}
+
+.header__img-3 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../assets/header-images/header-img-3.jpg");
+  position: absolute;
+  left: 0;
+}/*# sourceMappingURL=header.css.map */
