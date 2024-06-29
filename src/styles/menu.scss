@@ -6,14 +6,17 @@
 
   @include md-min {
     display: block;
+    padding: 0 20px;
   }
 }
 
 .menu-mobile {
   display: block;
+  margin-bottom: 30px;
 
   @include md-min {
     display: none;
+    margin-bottom: 0;
   }
 }
 
@@ -43,6 +46,7 @@
   }
 }
 
+  
 .menu__list--link {
   font-size: 20px;
   display: block;
@@ -53,6 +57,7 @@
   &:hover {
     text-decoration: underline;
     text-underline-offset: 5px;
+     text-decoration-thickness: 1px;
   }
 }
 

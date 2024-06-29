@@ -108,12 +108,6 @@ html {
 .App {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
-}
-@media screen and (min-width: 992px) {
-  .App {
-    padding: 0;
-  }
 }
 
 body {
@@ -204,6 +198,11 @@ a {
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
+}
+@media (max-width: 991px) {
+  .wrapper {
+    padding: 0 20px;
+  }
 }
 
 img {

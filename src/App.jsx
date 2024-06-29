@@ -1,4 +1,4 @@
-import "./styles/all.scss";
+import React, { useState, useEffect } from "react";
 import Menu from "./components/Menu";
 import Header from "./components/Header";
 import AboutMe from "./components/AboutMe";
@@ -8,21 +8,36 @@ import Instagram from "./components/Instagram";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
+import Spinner from "./components/Spinner"; 
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false); 
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className="App">
-      <Menu />
-      <div className="wrapper">
-        <Header />
-        <AboutMe />
-        <Services />
-        <Process />
-        <Projects />
-        <Instagram />
-        <Contact />
-        <Footer />
-      </div>
+      {loading ? (
+        <Spinner /> 
+      ) : (
+        <div className="wrapper">
+          <Menu />
+          <Header />
+          <AboutMe />
+          <Services />
+          <Process />
+          <Projects />
+          <Instagram />
+          <Contact />
+          <Footer />
+        </div>
+      )}
     </div>
   );
 }
