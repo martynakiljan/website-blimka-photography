@@ -138,8 +138,10 @@
 
 .menu__list--link {
   font-size: 20px;
+  display: block;
+  width: 100%;
   text-transform: uppercase;
-  padding: 20px;
+  padding: 20px 0;
 }
 .menu__list--link:hover {
   text-decoration: underline;

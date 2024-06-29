@@ -13,7 +13,7 @@ html {
 }
 
 .App {
-  max-width: 1700px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 
@@ -120,15 +120,26 @@ button {
 }
 
 .section {
-  margin-bottom: 150px;
+  margin-bottom: 50px;
 
+  @include md-min {
+    margin-bottom: 100px;
+  }
 }
 
 .title {
   font-family: "Parisienne", cursive;
   font-size: 50px;
-  padding: 30px 0;
+  padding-bottom: 50px;
   font-weight: lighter;
   margin: 0 auto;
   color: $color-main;
+
+  &.title-small {
+    font-size: 40px;
+  }
+}
+
+a {
+  color: unset;
 }

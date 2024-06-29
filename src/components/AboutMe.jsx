@@ -4,7 +4,7 @@ import { faDog, faPlane, faCamera } from "@fortawesome/free-solid-svg-icons";
 
 const AboutMe = () => {
   return (
-    <div className="about section ">
+    <div className="about section " id="about">
       <div className="about__inner">
         <div className="about__col">
           <img className="about__img " src={img1} />

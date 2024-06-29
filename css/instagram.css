@@ -1,0 +1,16 @@
+.instagram__images {
+  display: flex;
+  flex-direction: row;
+  justify-items: space-between;
+  gap: 5px;
+  overflow: hidden;
+}
+
+.instagram__img {
+  aspect-ratio: 1/1;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 16.6666666667%;
+}/*# sourceMappingURL=instagram.css.map */

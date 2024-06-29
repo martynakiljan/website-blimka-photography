@@ -1,0 +1,20 @@
+.projects__composition {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: stretch;
+  grid-template-areas: "big-img small-img-1" "big-img small-img-2";
+}
+
+.big-img {
+  grid-area: big-img;
+}
+
+.small-img-1 {
+  grid-area: small-img-1;
+}
+
+.small-img-2 {
+  grid-area: small-img-2;
+}/*# sourceMappingURL=projects.css.map */

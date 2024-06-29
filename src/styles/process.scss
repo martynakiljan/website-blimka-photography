@@ -1,10 +1,43 @@
 .process__item {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
+  font-family: "Parisienne", cursive;
 }
 
 .process__num {
   font-size: 30px;
-  color: $color-main;
+  color: $color-primary;
+}
+
+.process__icon {
+  width: 100px;
+  height: 100px;
+}
+
+.process__description {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.process__inner {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  gap: 10px;
+
+  @include md-min {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.process__item-main {
+  width: 100%;
+
+  @include md-min {
+    width: calc(100% / 3);
+  }
 }

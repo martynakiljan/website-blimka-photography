@@ -4,7 +4,7 @@ import img3 from "../assets/services-images/servies-img-3.jpg";
 
 const Services = () => {
   return (
-    <div className="services section ">
+    <div className="services section" id="services">
       <h2 className="services__title title">
         What moments can I capture for you?
       </h2>
@@ -21,8 +21,9 @@ const Services = () => {
           <img className="services__card-img" src={img2} />
           <div className="services__card-box">
             <p className="services__card__description">
-              couple and wedding photo
+              couple and <br></br>wedding photo
               <br></br>
+              <p></p>
             </p>
           </div>
         </div>
@@ -30,7 +31,7 @@ const Services = () => {
           <img className="services__card-img" src={img3} />
           <div className="services__card-box">
             <p className="services__card__description">
-              family photos
+              family <br></br>photos
               <br></br>
             </p>
           </div>

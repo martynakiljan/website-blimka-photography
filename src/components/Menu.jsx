@@ -10,46 +10,53 @@ const Menu = () => {
         <div className="menu__menu">
           <ul className="menu__list">
             <li className="menu__list-item">
-              <a className="menu__list--link">Home</a>
+              <a className="menu__list--link" href="#home">
+                Home
+              </a>
             </li>
             <li className="menu__list-item">
-              <a className="menu__list--link">About Me</a>
+              <a className="menu__list--link" href="#about">
+                About Me
+              </a>
             </li>
             <div className="menu__logo"></div>
             <li className="menu__list-item">
-              <a className="menu__list--link">My services</a>
+              <a className="menu__list--link" href="#services">
+                My services
+              </a>
             </li>
             <li className="menu__list-item">
-              <a className="menu__list--link">Contact</a>
+              <a className="menu__list--link" href="#contact">
+                Contact
+              </a>
             </li>
           </ul>
         </div>
       </menu>
       <nav className={`menu-mobile ${isOpen ? "isOpen" : ""}`}>
         <div className="menu-mobile__logo"></div>
-    
-          <Hamburger
-            toggled={isOpen}
-            toggle={setOpen}
-            className="menu-mobile__burger"
-          />
 
-          <ul className="menu__list">
-            <li className="menu__list-item">
-              <a className="menu__list--link">Home</a>
-            </li>
-            <li className="menu__list-item">
-              <a className="menu__list--link">About Me</a>
-            </li>
-            <li className="menu__list-item">
-              <a className="menu__list--link">My services</a>
-            </li>
-            <li className="menu__list-item">
-              <a className="menu__list--link">Contact</a>
-            </li>
-          </ul>
-        </nav>
-  
+        <Hamburger
+          toggled={isOpen}
+          toggle={setOpen}
+          className="menu-mobile__burger"
+        />
+
+        <ul className="menu__list">
+          <li className="menu__list-item">
+            <a className="menu__list--link">Home</a>
+          </li>
+          <li className="menu__list-item">
+            <a className="menu__list--link">About Me</a>
+          </li>
+          <li className="menu__list-item">
+            <a className="menu__list--link">My services</a>
+          </li>
+          <li className="menu__list-item">
+            <a className="menu__list--link">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </>
   );
 };

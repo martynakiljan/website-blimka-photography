@@ -5,7 +5,7 @@ import img3 from "../assets/header-images/header-img-3.jpg";
 
 const Header = () => {
   return (
-    <header className="header section">
+    <header className="header section" id="home">
       <div className="header__inner">
         <img
           className="header__img header__img-1"
