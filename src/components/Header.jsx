@@ -5,7 +5,7 @@ import img3 from "../assets/header-images/header-img-3.jpg";
 
 const Header = () => {
   return (
-    <header className="header">
+    <header className="header section">
       <div className="header__inner">
         <img
           className="header__img header__img-1"
@@ -23,9 +23,11 @@ const Header = () => {
           alt="Header Image 3"
         />
       </div>
-      <div className="header__title">
-        <h1 className="header__title-h1">Capture</h1>
-        <h1 className="header__title-h1 header__subtitle-h1">the moment</h1>
+      <div className="header__bottom">
+        <p className="header__text">
+          Capture the unforgettable, love-filled moments of your dreams.
+        </p>
+        <button className="header__button">Contact me!</button>
       </div>
     </header>
   );

@@ -119,6 +119,8 @@
   width: 100%;
 }
 .menu-mobile .menu__list {
+  z-index: 11;
+  background-color: #f1ebe4;
   flex-direction: column;
   position: absolute;
   left: 0;

@@ -24,6 +24,8 @@
   width: 100%;
 
   .menu-mobile & {
+    z-index: 11;
+    background-color: $color-bg;
     flex-direction: column;
     position: absolute;
     left: 0;

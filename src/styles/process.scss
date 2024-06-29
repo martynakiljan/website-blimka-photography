@@ -1,0 +1,10 @@
+.process__item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.process__num {
+  font-size: 30px;
+  color: $color-main;
+}
