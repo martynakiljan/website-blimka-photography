@@ -1,3 +1,4 @@
+// App.js
 import React, { useState, useEffect } from "react";
 import Menu from "./components/Menu";
 import Header from "./components/Header";
@@ -8,14 +9,15 @@ import Instagram from "./components/Instagram";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
-import Spinner from "./components/Spinner"; 
+import Spinner from "./components/Spinner"; // Importujemy komponent Spinner
+import "./App.css"; // Zaimportuj główne style aplikacji
 
 function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setLoading(false); 
+      setLoading(false); // Ustawienie loading na false po 2 sekundach
     }, 2000);
 
     return () => clearTimeout(timer);
@@ -23,9 +25,7 @@ function App() {
 
   return (
     <div className="App">
-      {loading ? (
-        <Spinner /> 
-      ) : (
+  
         <div className="wrapper">
           <Menu />
           <Header />
@@ -37,7 +37,7 @@ function App() {
           <Contact />
           <Footer />
         </div>
-      )}
+
     </div>
   );
 }

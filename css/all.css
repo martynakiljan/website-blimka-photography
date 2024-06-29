@@ -941,4 +941,39 @@ a {
 .small-img-2 {
   grid-area: small-img-2;
   border: 5px solid #f1ebe4;
+}
+
+/* Spinner.css */
+.spinner-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.spinner-container {
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+
+.spinner {
+  width: 100%;
+  height: 100%;
+  border: 3px solid transparent;
+  border-top-color: #3498db;
+  border-radius: 50%;
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }/*# sourceMappingURL=all.css.map */
