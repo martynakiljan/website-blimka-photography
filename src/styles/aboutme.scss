@@ -13,14 +13,23 @@
 .about__bg {
   margin-top: -70px;
   background-color: $color-main;
-  width: 100%;
+  width: 90%;
   padding: 10px;
+  border: 1px solid $color-bg;
+
+  @include md-min {
+    width: 60%;
+  }
 
   @include md-min {
     margin-top: 70px;
     min-height: 70vh;
     margin-left: -50px;
     padding: 0 30px;
+    
+  }
+
+  @include lg-min {
     width: 50%;
   }
 }

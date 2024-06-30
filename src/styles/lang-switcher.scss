@@ -1,0 +1,45 @@
+.language-switcher {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+
+  @include md-max {
+    left: 20px;
+  }
+}
+
+.language-switcher__item {
+  display: inline-block;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: $color-main;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  color: $color-bg;
+  font-weight: bold;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: color 0.3s ease;
+  margin-right: 10px;
+}
+
+.instagram-link {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.instagram-icon {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  color: $color-bg;
+  font-size: 1.2rem;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: -1px; 
+}

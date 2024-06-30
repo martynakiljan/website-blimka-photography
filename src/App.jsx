@@ -14,6 +14,9 @@ import React, {useState, useEffect} from "react";
 function App() {
   const [loading, setLoading] = useState(true);
 
+
+
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false); 
