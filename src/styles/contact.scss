@@ -24,3 +24,14 @@
 .form__button {
   margin: 50px auto;
 }
+
+  .form-error {
+    padding: 5px 0;
+    color: brown;
+    font-size: 10px;
+ }
+
+
+.form__button:disabled {
+  cursor: not-allowed;
+}

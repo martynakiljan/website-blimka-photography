@@ -26,6 +26,10 @@
   overflow: hidden;
   transition: color 0.3s ease;
   margin-right: 10px;
+
+  &:hover {
+    transform: scale(1.2)
+  }
 }
 
 .instagram-link {

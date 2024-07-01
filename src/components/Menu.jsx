@@ -4,6 +4,15 @@ import { Cross as Hamburger } from "hamburger-react";
 const Menu = () => {
   const [isOpen, setOpen] = useState(false);
 
+  const handleLinkClick = (e, sectionId) => {
+    e.preventDefault();
+    setOpen(false);
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <menu className="menu menu-desktop">
@@ -44,16 +53,40 @@ const Menu = () => {
 
         <ul className="menu__list">
           <li className="menu__list-item">
-            <a className="menu__list--link">Home</a>
+            <a
+              className="menu__list--link"
+              href="#home"
+              onClick={(e) => handleLinkClick(e, "home")}
+            >
+              Home
+            </a>
           </li>
           <li className="menu__list-item">
-            <a className="menu__list--link">About Me</a>
+            <a
+              className="menu__list--link"
+              href="#about"
+              onClick={(e) => handleLinkClick(e, "about")}
+            >
+              About Me
+            </a>
           </li>
           <li className="menu__list-item">
-            <a className="menu__list--link">My services</a>
+            <a
+              className="menu__list--link"
+              href="#services"
+              onClick={(e) => handleLinkClick(e, "services")}
+            >
+              My services
+            </a>
           </li>
           <li className="menu__list-item">
-            <a className="menu__list--link">Contact</a>
+            <a
+              className="menu__list--link"
+              href="#contact"
+              onClick={(e) => handleLinkClick(e, "contact")}
+            >
+              Contact
+            </a>
           </li>
         </ul>
       </nav>
