@@ -1,10 +1,46 @@
 {
+  "menu": {
+    "menu-link-1": "home",
+    "menu-link-2": "about me",
+    "menu-link-3": "my services",
+    "menu-link-4": "contact"
+  },
   "header": {
     "title": "Capture the unforgettable, love-filled moments of your dreams.",
     "buttonText": "Contact me!"
   },
   "about": {
     "title": "A little bit about me...",
-    "subtitle": "Hi! I am Aleksandra 👋🏻"
+    "subtitle": "Hi! I am Aleksandra 👋🏻",
+    "about-description": "Lorem ipsum dolor sit amet consectetur adipiscing, elit nisl quis augue mauris ullamcorper habitant, porttitor parturient egestas nec cubilia. Non enim cubilia laoreet tempus lacus ligula sagittis urna convallis, euismod maecenas auctor penatibus massa bibendum montes. Mus lobortis suspendisse lacus habitant feugiat, fringilla cras mollis maecenas, pretium eros imperdiet ultrices",
+    "about-love-title": "I love:",
+    "about-love-text-1": "my dog",
+    "about-love-text-2": "travel",
+    "about-love-text-3": "and of course take photos..."
+  },
+  "services": {
+    "title": "What moments can I capture for you?",
+    "card-text-1a": "women's and ",
+    "card-text-1b": " business sessionss",
+    "card-text-2a": "couple and ",
+    "card-text-2b": "wedding photos",
+    "card-text-3a": "family ",
+    "card-text-3b": "photos"
+  },
+  "process": {
+    "title": "The Process",
+    "process-text-1": "Let's talk first!",
+    "process-text-2": "We will choose the location and date together.",
+    "process-text-3": "You will get beautiful memories memories for a lifetime..."
+  },
+  "projects": {
+    "title": "If you're after something a little unconventional, you've landed in the perfect spot! "
+  },
+  "instagram": {
+    "title": "Follow me on instagram"
+  },
+  "contact": {
+    "title": "Now that you've gotten to know me and my work a little bit, help me get to know you!",
+    "button-text": "Send!"
   }
 }

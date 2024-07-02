@@ -1,0 +1,24 @@
+.scroll-to-top {
+  background-color: $color-main!important;
+  border-radius: 50%!important;
+  color: $color-bg!important;
+  border:1px solid $color-bg;
+    z-index: 11111;
+    animation: jump 1s ease-in-out infinite;
+    bottom: 100px!important;
+    }
+
+
+
+@keyframes jump {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.jump-animation {
+  animation: jump 1s ease-in-out infinite; /* Definicja animacji: jump, 1 sekunda, ease-in-out, nieskończona liczba powtórzeń */
+}

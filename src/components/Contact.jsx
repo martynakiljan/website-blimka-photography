@@ -1,7 +1,9 @@
 import { useForm } from 'react-hook-form'
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Contact = ({ showMessage, showButton, onSubmit }) => {
+         const { t } = useTranslation();
   const [formError, setFormError] = useState('');
   
   const {
@@ -29,8 +31,7 @@ const Contact = ({ showMessage, showButton, onSubmit }) => {
   return (
     <div>
       <h2 className="title title-small" id="contact">
-        Now that you've gotten to know me and my work a little bit, help me get
-        to know you!
+            {t('contact.title')}
       </h2>
 
       <div className="form__wrapper" id="contact">
@@ -101,7 +102,7 @@ const Contact = ({ showMessage, showButton, onSubmit }) => {
             disabled={!isDirty || !isValid}
             onClick={() => { if (!isDirty || !isValid) handleError() }} // Show error message if form is not valid or dirty
           >
-            SEND!
+           {t('contact.button-text')}
           </button>
 
           {formError && (

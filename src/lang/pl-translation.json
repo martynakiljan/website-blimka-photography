@@ -1,9 +1,46 @@
 {
-  "header": {
-    "title": "Uchwyć niezapomniane, pełne miłości chwile swoich marzeń.",
-    "buttonText": "Skontaktuj się!"
+  "menu": {
+    "menu-link-1": "home",
+    "menu-link-2": "o mnie",
+    "menu-link-3": "moje usługi",
+    "menu-link-4": "kontakt"
   },
-  "common": {
-    "loadingText": "Ładowanie..."
+  "header": {
+    "title": "Uchwyt niezapomniane, pełne miłości chwile Twoich marzeń.",
+    "buttonText": "Skontaktuj się ze mną!"
+  },
+  "about": {
+    "title": "Trochę o mnie...",
+    "subtitle": "Cześć! Jestem Aleksandra 👋🏻",
+    "about-description": "Lorem ipsum dolor sit amet consectetur adipiscing, elit nisl quis augue mauris ullamcorper habitant, porttitor parturient egestas nec cubilia. Non enim cubilia laoreet tempus lacus ligula sagittis urna convallis, euismod maecenas auctor penatibus massa bibendum montes. Mus lobortis suspendisse lacus habitant feugiat, fringilla cras mollis maecenas, pretium eros imperdiet ultrices",
+    "about-love-title": "Kocham:",
+    "about-love-text-1": "mojego psa",
+    "about-love-text-2": "podróże",
+    "about-love-text-3": "i oczywiście robienie zdjęć..."
+  },
+  "services": {
+    "title": "Jakie chwile mogę dla Ciebie uchwycić?",
+    "card-text-1a": "sesje kobiece i ",
+    "card-text-1b": "biznesowe",
+    "card-text-2a": "sesje par i ",
+    "card-text-2b": "zdjęcia ślubne",
+    "card-text-3a": "sesje",
+    "card-text-3b": "rodzinne"
+  },
+  "process": {
+    "title": "Proces",
+    "process-text-1": "Zacznijmy od rozmowy!",
+    "process-text-2": "Razem wybierzemy lokalizację i datę.",
+    "process-text-3": "Otrzymasz piękne wspomnienia na całe życie..."
+  },
+  "projects": {
+    "title": "Jeśli szukasz czegoś trochę nietypowego, trafiłeś idealnie!"
+  },
+  "instagram": {
+    "title": "Zaobserwuj mnie na Instagramie"
+  },
+  "contact": {
+    "title": "Teraz, gdy już trochę mnie i moją pracę poznałeś, pomóż mi poznać Ciebie!",
+    "button-text": "Wyślij!"
   }
 }

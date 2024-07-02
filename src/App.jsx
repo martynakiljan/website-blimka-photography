@@ -10,11 +10,12 @@ import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 import Spinner from "./components/Spinner";
 import React, {useState, useEffect} from "react";
+import LanguageSwitcher from "./components/TopButtons";
+import ScrollToTopButton from "./components/ScrollToTopButton";
+
 
 function App() {
   const [loading, setLoading] = useState(true);
-
-
 
 
   useEffect(() => {
@@ -31,6 +32,7 @@ function App() {
         <Spinner /> 
       ) : (
         <div className="wrapper">
+          <LanguageSwitcher/>
           <Menu />
           <Header />
           <AboutMe />
@@ -39,6 +41,7 @@ function App() {
           <Projects />
           <Instagram />
           <Contact />
+          <ScrollToTopButton/>
           <Footer />
         </div>
       )}

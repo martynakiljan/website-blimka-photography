@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { Cross as Hamburger } from "hamburger-react";
+import { useTranslation } from 'react-i18next';
 
 const Menu = () => {
+          const { t } = useTranslation();
   const [isOpen, setOpen] = useState(false);
 
   const handleLinkClick = (e, sectionId) => {
@@ -20,23 +22,23 @@ const Menu = () => {
           <ul className="menu__list">
             <li className="menu__list-item">
               <a className="menu__list--link" href="#home">
-                Home
+              {t('menu.menu-link-1')}
               </a>
             </li>
             <li className="menu__list-item">
               <a className="menu__list--link" href="#about">
-                About Me
+                   {t('menu.menu-link-2')}
               </a>
             </li>
             <div className="menu__logo"></div>
             <li className="menu__list-item">
               <a className="menu__list--link" href="#services">
-                My services
+               {t('menu.menu-link-3')}
               </a>
             </li>
             <li className="menu__list-item">
               <a className="menu__list--link" href="#contact">
-                Contact
+                  {t('menu.menu-link-4')}
               </a>
             </li>
           </ul>

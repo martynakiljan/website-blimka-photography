@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import img1 from "../assets/header-images/header-img-1.jpg";
 import img2 from "../assets/header-images/header-img-2.jpg";
 import img3 from "../assets/header-images/header-img-3.jpg";
-import LanguageSwitcher from "./LangSwitcher";
+import LanguageSwitcher from "./TopButtons";
 import { useTranslation } from 'react-i18next';
 
 
@@ -21,7 +21,6 @@ const Header = () => {
 
   return (
     <header className="header section" id="home">
-       <LanguageSwitcher/>
       <div className="header__inner">
         <img className="header__img header__img-1 kenburns-top" src={img1} alt="Header Image 1" />
         <img className="header__img header__img-2" src={img2} alt="Header Image 2" />
