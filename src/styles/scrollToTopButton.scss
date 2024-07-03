@@ -2,10 +2,14 @@
   background-color: $color-main!important;
   border-radius: 50%!important;
   color: $color-bg!important;
-  border:2px solid $color-bg!important;
+  border:1px solid $color-bg!important;
     z-index: 11111;
     animation: jump 1s ease-in-out infinite;
-    bottom: 100px!important;
+    bottom: 50px!important;
+
+    @include md-min {
+          bottom: 100px!important;
+    }
     }
 
 

@@ -30,7 +30,7 @@ const Header = () => {
         <p className="header__text">
        {t('header.title')}
         </p>
-        <button className="header__button">  {t('header.buttonText')}</button>
+        <a className="header__button"  href="#contact" >  {t('header.buttonText')}</a>
       </div>
     </header>
   );
