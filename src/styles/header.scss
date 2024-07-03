@@ -1,101 +1,107 @@
 .header__img-1 {
-  position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("../assets/header-images/header-img-1.jpg");
-  margin: 0 auto;
-  width: 70%;
-  display: block;
-  animation: kenburns-top 5s ease-out both;
+     position: relative;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-image: url("../assets/header-images/header-img-1.jpg");
+     margin: 0 auto;
+     width: 70%;
+     display: block;
+     animation: kenburns-top 5s ease-out both;
 }
-
-
-  .header__img-2 {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("../assets/header-images/header-img-2.jpg");
-  position: absolute;
-  right: -25%;
-  top: 40%;
-  transform: scale(0.4);
-   border: 2px solid $color-bg;
-
-  @include md-min {
-    top: 70%;
-  }
+ .header__img-2 {
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-image: url("../assets/header-images/header-img-2.jpg");
+     position: absolute;
+     right: -25%;
+     top: 40%;
+     transform: scale(0.4);
+     border: 2px solid $color-bg;
+     @include md-min {
+         top: 70%;
+    }
+     @media only screen and (min-width: 1550px) {
+         top: 50%;
+    }
+     @media only screen and (min-width: 2020px) {
+         top: 0;
+    }
 }
+ .header__img-3 {
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-image: url("../assets/header-images/header-img-3.jpg");
+     position: absolute;
+     left: -30%;
+     top: 0;
+     transform: scale(0.3);
+     border: 2px solid $color-bg;
+     @include md-min {
+         top: -20%;
+    }
+     @media only screen and (min-width: 1550px) {
+         top: 0;
+    }
+     @media only screen and (min-width: 1650px) {
+         top: -30%;
+    }
+     @media only screen and (min-width: 2020px) {
+         top: -60%;
+         left: -25%;
+    }
+     @media only screen and (min-width: 2670px) {
+         top: -30%;
+    }
+}
+ .header__title-h1 {
+     font-size: 80px;
+     color: #b1a8a8;
+     font-family: "Cormorant Garamond", serif;
+     font-weight: 300;
+     text-transform: uppercase;
+}
+ .header__subtitle-h1 {
+     font-size: 100px;
+}
+ .header__title {
+     position: absolute;
+     bottom: 0;
+     right: 0;
+}
+ .header__bottom {
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-end;
+}
+ .header__text {
+     color: $color-main;
+     text-transform: uppercase;
+     font-size: 22px;
+     padding-top: 50px;
+     padding-bottom: 50px;
+     text-align: right;
+     letter-spacing: 1.5px;
+     @include md-min {
+         padding-top: 100px;
+         font-size: 30px;
+    }
+}
+ .header__button {
+     display: inline-block;
+     width: auto;
+     border: none;
+     background: $color-main;
+     color: $color-bg;
+     padding: 10px 30px;
+     text-transform: uppercase;
+     border: 2px solid transparent;
+     margin-right: 0;
+     margin-left: auto;
 
-.header__img-3 {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("../assets/header-images/header-img-3.jpg");
-  position: absolute;
-  left: -30%;
-  top: 0;
-  transform: scale(0.3);
-   border: 2px solid $color-bg;
+     &:hover {
+      background: $color-bg;
+      border: 2px solid $color-main;
+      color: $color-main;
+    }
+}
  
-
-  @include md-min {
-    top: -20%;
-  }
-}
-
-.header__title-h1 {
-  font-size: 80px;
-  color: #b1a8a8;
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 300;
-  text-transform: uppercase;
-}
-
-.header__subtitle-h1 {
-  font-size: 100px;
-}
-
-.header__title {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-.header__bottom {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-.header__text {
-  color: $color-main;
-  text-transform: uppercase;
-  font-size: 22px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  text-align: right;
-  letter-spacing: 1.5px;
-
-  @include md-min {
-      padding-top: 100px;
-        font-size: 30px;
-  }
-}
-
-.header__button {
-  display: inline-block;
-  width: auto;
-  border: none;
-  background: $color-main;
-  color: $color-bg;
-  padding: 10px 30px;
-  text-transform: uppercase;
-  border: 2px solid transparent;
-  margin-right: 0;
-  margin-left: auto;
-
-  &:hover {
-    background: $color-bg;
-    border: 2px solid $color-main;
-    color: $color-main;
-  }
-}
-
-
-
