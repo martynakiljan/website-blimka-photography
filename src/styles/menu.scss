@@ -33,7 +33,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    height: 100vh;
+    height: calc(100vh - 200px);
     justify-content: flex-start;
     opacity: 0;
     visibility: hidden;
@@ -43,6 +43,7 @@
   .menu-mobile.isOpen & {
     opacity: 1;
     visibility: visible;
+    margin-top: 30px;
   }
 }
 
@@ -54,12 +55,18 @@
   text-transform: uppercase;
   padding: 20px 0;
 
+  @include md-max {
+    font-size: 14px;
+  }
+
   &:hover {
     text-decoration: underline;
     text-underline-offset: 5px;
      text-decoration-thickness: 1px;
   }
 }
+  
+
 
 .menu__list-item {
   .menu-mobile & {

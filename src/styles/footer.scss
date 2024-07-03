@@ -1,6 +1,10 @@
 .footer_inner {
   margin: 0 auto;
-  min-height: 10vh;
+  min-height: 6vh;
   border-top: 1px solid $color-main;
   padding: 15px;
+
+  @include md-min {
+      min-height: 10vh;
+  }
 }

@@ -13,9 +13,10 @@
 .about__bg {
   margin-top: -70px;
   background-color: $color-main;
-  width: 90%;
+  width: 95%;
   padding: 10px;
   border: 1px solid $color-bg;
+  margin-left: -1px;
 
   @include md-min {
     width: 60%;
@@ -26,7 +27,7 @@
     min-height: 70vh;
     margin-left: -50px;
     padding: 0 30px;
-    
+  
   }
 
   @include lg-min {
@@ -42,15 +43,26 @@
 .about__title {
   font-family: "Parisienne", cursive;
   font-weight: lighter;
-  font-size: 50px;
+  font-size: 25px;
   color: $color-bg;
-  padding: 30px 0;
+  padding: 20px 0;
+
+  @include md-min {
+      font-size: 30px;
+        padding: 30px 0;
+
+  }
 }
 
 .about__subtitle {
-  font-size: 20px;
-  padding-bottom: 30px;
+  font-size: 15px;
+  padding-bottom: 20px;
   font-weight: 400;
+
+  @include md-min {
+     font-size: 20px;
+       padding-bottom: 30px;
+  }
 }
 
 .about__description {
@@ -58,7 +70,11 @@
 }
 
 .about__love-title {
+  padding: 20px 0;
+
+  @include md-min {
   padding: 30px 0;
+  }
 }
 
 .about__love {
@@ -81,4 +97,8 @@
     padding: 15px 0;
       font-family: "Parisienne", cursive;
   }
+
+    @include md-max {
+      font-size: 15px;
+    }
 }
