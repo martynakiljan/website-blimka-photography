@@ -20,7 +20,7 @@ const Contact = ({ showMessage, showButton, onSubmit }) => {
   }, [showMessage, reset])
 
   const onSubmitHandler = (data) => {
-    setFormError(''); // Reset form error message on successful submit
+    setFormError(''); 
     onSubmit(data);
   };
 
@@ -36,8 +36,9 @@ const Contact = ({ showMessage, showButton, onSubmit }) => {
 
       <div className="form__wrapper" id="contact">
         <form onSubmit={handleSubmit(onSubmitHandler)} className="form">
+          <label className='label-form'>Your name:</label>
           <input
-            placeholder="My name is"
+            placeholder="Alice"
             {...register("firstName", { required: "Name is required", minLength: { value: 3, message: "Name must be at least 3 characters long" } })}
             type="text"
             id="firstName"
@@ -48,14 +49,14 @@ const Contact = ({ showMessage, showButton, onSubmit }) => {
               {errors.firstName.message}
             </p>
           )}
-        
+          <label className='label-form'>Your email:</label>
           <input
             {...register("email", {
               required: "Email is required",
               pattern: { value: /^\S+@\S+$/i, message: "Please enter a valid email address" },
             })}
             type="email"
-            placeholder="My email is"
+            placeholder="alice@gmail.com"
             id="email"
             className="input-form"
           />
@@ -64,9 +65,9 @@ const Contact = ({ showMessage, showButton, onSubmit }) => {
               {errors.email.message}
             </p>
           )}
-        
+          <label className='label-form'>Your number:</label>
           <input
-            placeholder="My number is"
+            placeholder="+48 676 234 234"
             className="input-form"
             {...register("phone", {
               required: "Phone number is required",
@@ -83,12 +84,12 @@ const Contact = ({ showMessage, showButton, onSubmit }) => {
               {errors.phone.message}
             </p>
           )}
-        
+          <label className='label-form'>Your message:</label>
           <textarea
             {...register("message", { required: "Message is required", minLength: { value: 5, message: "Message must be at least 5 characters long" } })}
             className="input-form"
             id="message"
-            placeholder="Ask whatever you want!"
+            placeholder="Hello Ola, I want you to take beautiful photos of me!"
           ></textarea>
           {errors.message && (
             <p className="form-error">

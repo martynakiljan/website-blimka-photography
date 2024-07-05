@@ -12,6 +12,19 @@
   }
 }
 
+.label-form {
+  background: none;
+  border: none;
+  padding: 5px 0;
+  font-family: "Work Sans", sans-serif;
+  width: 100%;
+color: $color-main;
+
+  @include md-min {
+    width: 50%;
+  }
+}
+
 .form {
   padding-bottom: 20px;
   margin: 0 auto;
