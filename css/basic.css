@@ -115,8 +115,13 @@ body {
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 16px;
+  font-size: 12px;
   overflow-x: hidden;
+}
+@media screen and (min-width: 992px) {
+  body {
+    font-size: 16px;
+  }
 }
 
 html,
@@ -198,10 +203,11 @@ a {
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px;
 }
-@media (max-width: 991px) {
+@media screen and (min-width: 1330px) {
   .wrapper {
-    padding: 0 20px;
+    padding: 0;
   }
 }
 
@@ -212,6 +218,12 @@ img {
 
 button {
   cursor: pointer;
+  font-size: 12px;
+}
+@media screen and (min-width: 992px) {
+  button {
+    font-size: 16px;
+  }
 }
 
 .section {
@@ -225,14 +237,21 @@ button {
 
 .title {
   font-family: "Parisienne", cursive;
-  font-size: 50px;
+  font-size: 30px;
   padding-bottom: 50px;
   font-weight: lighter;
   margin: 0 auto;
   color: #5a4b2d;
 }
-.title.title-small {
-  font-size: 40px;
+@media screen and (min-width: 992px) {
+  .title {
+    font-size: 50px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .title.title-small {
+    font-size: 40px;
+  }
 }
 
 a {

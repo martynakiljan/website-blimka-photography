@@ -3,7 +3,7 @@ import { Cross as Hamburger } from "hamburger-react";
 import { useTranslation } from 'react-i18next';
 
 const Menu = () => {
-          const { t } = useTranslation();
+  const { t } = useTranslation();
   const [isOpen, setOpen] = useState(false);
 
   const handleLinkClick = (e, sectionId) => {

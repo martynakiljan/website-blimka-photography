@@ -41,6 +41,11 @@
   },
   "contact": {
     "title": "Teraz, gdy już trochę mnie i moją pracę poznałeś, pomóż mi poznać Ciebie!",
-    "button-text": "Wyślij!"
+    "button-text": "Wyślij!",
+    "form-message": "Dziękuję! ​​Odezwę się wkrótce!",
+    "form-label-name": "Twoje imie:",
+    "form-label-email": "Twoj email:",
+    "form-label-number": "Twoj telefon:",
+    "form-label-message": "Twoja wiadomość"
   }
 }

@@ -41,6 +41,11 @@
   },
   "contact": {
     "title": "Now that you've gotten to know me and my work a little bit, help me get to know you!",
-    "button-text": "Send!"
+    "button-text": "Send!",
+    "form-message": "THANK YOU!  I'll get back to you soon!",
+    "form-label-name": "Your name:",
+    "form-label-email": "Your email:",
+    "form-label-number": "Your number:",
+    "form-label-message": "Your message:"
   }
 }
