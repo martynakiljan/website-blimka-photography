@@ -13,19 +13,12 @@
      background-size: cover;
      background-image: url("../assets/header-images/header-img-2.jpg");
      position: absolute;
-     right: -25%;
-     top: 40%;
-     transform: scale(0.4);
+     right: -30%;
+     top: 20%;
+     transform: scale(0.3);
      border: 2px solid $color-bg;
-     @include md-min {
-         top: 70%;
-    }
-     @media only screen and (min-width: 1550px) {
-         top: 50%;
-    }
-     @media only screen and (min-width: 2020px) {
-         top: 0;
-    }
+
+  
 }
  .header__img-3 {
      background-repeat: no-repeat;

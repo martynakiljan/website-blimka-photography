@@ -6,7 +6,6 @@
     z-index: 11111;
     animation: jump 1s ease-in-out infinite;
     bottom: 50px!important;
-
     @include md-min {
           bottom: 100px!important;
     }

@@ -15,7 +15,7 @@ const TopButtons= () => {
   return (
     <div className="top-buttons">
       <div className="top-button__item top-button__lang" onClick={() => changeLanguage(showPL ? 'pl' : 'en')}>
-        {showPL ? 'PL' : 'EN'}
+        {showPL ? 'EN' : 'PL'}
       </div>
       <a href="https://www.instagram.com/aleksandrablimka_photo/" target="_blank" rel="noopener noreferrer" className="top-button__item top-button__insta">
         <FaInstagram className="instagram-icon" />

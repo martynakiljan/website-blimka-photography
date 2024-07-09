@@ -6,13 +6,16 @@
     "menu-link-4": "kontakt"
   },
   "header": {
-    "title": "Uchwyt niezapomniane, pełne miłości chwile Twoich marzeń.",
-    "buttonText": "Skontaktuj się ze mną!"
+    "title": "Capture the moment",
+    "buttonText": "napisz do mnie!"
   },
   "about": {
     "title": "Trochę o mnie...",
-    "subtitle": "Cześć! Jestem Aleksandra 👋🏻",
-    "about-description": "Lorem ipsum dolor sit amet consectetur adipiscing, elit nisl quis augue mauris ullamcorper habitant, porttitor parturient egestas nec cubilia. Non enim cubilia laoreet tempus lacus ligula sagittis urna convallis, euismod maecenas auctor penatibus massa bibendum montes. Mus lobortis suspendisse lacus habitant feugiat, fringilla cras mollis maecenas, pretium eros imperdiet ultrices",
+    "subtitle": "Cześć! Jestem Aleksandra",
+    "about-description-1": "jestem fotografem z Torunia. Fotografia to nie tylko moja praca, ale przede wszystkim pasja, którą rozwijam od lat. Z każdą sesją staram się uchwycić niepowtarzalne momenty i emocje, które będą trwały wiecznie na zdjęciach.",
+    "about-description-2": "Mój rozwój zawodowy wspierałam poprzez uczestnictwo w licznych warsztatach i kursach, które pomogły mi doskonalić umiejętności i poznać nowe techniki fotografii. Dzięki temu moje portfolio jest różnorodne i pełne inspirujących prac.",
+    "about-description-3": "Specjalizuję się w różnych rodzajach fotografii - od portretów kobiecych i rodzinnych, przez fotografię ślubną, aż po sesję komercyjne. Zawsze staram się dostosować do indywidualnych potrzeb i oczekiwań moich klientów, aby każda sesja była wyjątkowa i spełniła ich najskrytsze marzenia.",
+    "about-description-4": "Zapraszam do zapoznania się z moimi pracami i do kontaktu. Razem możemy stworzyć coś pięknego!",
     "about-love-title": "Kocham:",
     "about-love-text-1": "mojego psa",
     "about-love-text-2": "podróże",
@@ -29,9 +32,9 @@
   },
   "process": {
     "title": "Proces",
-    "process-text-1": "Zacznijmy od rozmowy!",
-    "process-text-2": "Razem wybierzemy lokalizację i datę.",
-    "process-text-3": "Otrzymasz piękne wspomnienia na całe życie..."
+    "process-text-1": "Zacznijmy od rozmowy! Skontaktuj się ze mną.",
+    "process-text-2": "Ustalmy szczegóły. Razem wybierzemy lokalizację i datę.",
+    "process-text-3": "Robimy sesję! Otrzymasz piękne wspomnienia na całe życie..."
   },
   "projects": {
     "title": "Jeśli szukasz czegoś trochę nietypowego, trafiłeś idealnie!"
@@ -46,6 +49,18 @@
     "form-label-name": "Twoje imie:",
     "form-label-email": "Twoj email:",
     "form-label-number": "Twoj telefon:",
-    "form-label-message": "Twoja wiadomość"
+    "form-label-message": "Twoja wiadomość",
+    "form-placeholder-name": "Alicja",
+    "form-placeholder-email": "alicja@gmail.com",
+    "form-placeholder-number": "+48 676 234 234",
+    "form-placeholder-message": "Cześć Ola, chciałbym/chciałabym, żebyś zrobiła mi piękne zdjęcia!",
+    "form-error-name-required": "Imię jest wymagane",
+    "form-error-name-minLength": "Imię musi mieć co najmniej 3 znaki",
+    "form-error-email-required": "Email jest wymagany",
+    "form-error-email-pattern": "Proszę wpisać prawidłowy adres email",
+    "form-error-phone-required": "Numer telefonu jest wymagany",
+    "form-error-phone-pattern": "Proszę wpisać prawidłowy numer telefonu z opcjonalnym kodem kraju",
+    "form-error-message-required": "Wiadomość jest wymagana",
+    "form-error-message-minLength": "Wiadomość musi mieć co najmniej 5 znaków"
   }
 }

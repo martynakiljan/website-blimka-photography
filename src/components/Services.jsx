@@ -12,7 +12,7 @@ const Services = () => {
       </h2>
       <div className="services__cards">
         <div className="services__card">
-          <img className="services__card-img" src={img1} />
+          <img className="services__card-img services__card-img--1" src={img1} />
           <div className="services__card-box">
             <p className="services__card__description">
                   {t('services.card-text-1a')} <br></br>
@@ -21,7 +21,7 @@ const Services = () => {
           </div>
         </div>
         <div className="services__card">
-          <img className="services__card-img" src={img2} />
+          <img className="services__card-img  services__card-img--2" src={img2} />
           <div className="services__card-box">
             <p className="services__card__description">
               {t('services.card-text-2a')} <br></br>

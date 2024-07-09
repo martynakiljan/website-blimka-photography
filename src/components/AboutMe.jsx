@@ -16,10 +16,19 @@ const AboutMe = () => {
           <h3 className="about__title">{t('about.title')}</h3>
           <h4 className="about__subtitle">{t('about.subtitle')} 👋🏻</h4>
           <p className="about__description">
-{t('about.about-description')}
+         {t('about.about-description-1')}
+          </p><br></br>
+  <p className="about__description">
+         {t('about.about-description-2')}
+          </p> <br></br>
+            <p className="about__description">
+         {t('about.about-description-3')} 
           </p>
-
-          <p className="about__love-title">{t('about.about-love-title')}</p>
+          <br></br>
+                <p className="about__description about__description--italic">
+         {t('about.about-description-4')} 💛
+          </p>
+          {/* <p className="about__love-title">{t('about.about-love-title')}</p>
           <div className="about__love">
             <div className="about__love-part">
               <FontAwesomeIcon icon={faDog} className="icon" />
@@ -33,7 +42,7 @@ const AboutMe = () => {
               <FontAwesomeIcon icon={faCamera} className="icon" />
               <span>{t('about.about-love-text-3')}.</span>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

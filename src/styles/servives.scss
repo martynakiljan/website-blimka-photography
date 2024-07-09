@@ -20,10 +20,14 @@
 }
 
 .services__card-img {
-  aspect-ratio: 2 / 1;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   height: 100%;
 }
+
+  .services__card-img--2 {
+     object-position: center top;
+    }
 
 .services__card-box {
   background-color: $color-secondary;

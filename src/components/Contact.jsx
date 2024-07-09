@@ -67,10 +67,10 @@ const Contact = ({ showMessage }) => {
         <form ref={form} onSubmit={handleSubmit(onSubmitHandler)} className="form">
           <label className="label-form">{t('contact.form-label-name')}</label>
           <input
-            placeholder="Alice"
+            placeholder={t('contact.form-placeholder-name')}
             {...register("firstName", {
-              required: "Name is required",
-              minLength: { value: 3, message: "Name must be at least 3 characters long" },
+              required: t('contact.form-error-name-required'),
+              minLength: { value: 3, message: t('contact.form-error-name-minLength') },
             })}
             type="text"
             name="firstName"
@@ -82,11 +82,11 @@ const Contact = ({ showMessage }) => {
           <label className="label-form">{t('contact.form-label-email')}</label>
           <input
             {...register("email", {
-              required: "Email is required",
-              pattern: { value: /^\S+@\S+$/i, message: "Please enter a valid email address" },
+              required: t('contact.form-error-email-required'),
+              pattern: { value: /^\S+@\S+$/i, message: t('contact.form-error-email-pattern') },
             })}
             type="email"
-            placeholder="alice@gmail.com"
+            placeholder={t('contact.form-placeholder-email')}
             id="email"
             name="email"
             className="input-form"
@@ -95,14 +95,14 @@ const Contact = ({ showMessage }) => {
 
           <label className="label-form">{t('contact.form-label-number')}</label>
           <input
-            placeholder="+48 676 234 234"
+            placeholder={t('contact.form-placeholder-number')}
             className="input-form"
             name="phone"
             {...register("phone", {
-              required: "Phone number is required",
+              required: t('contact.form-error-phone-required'),
               pattern: {
                 value: /^(?:\+?\d{1,4}[-\s]?)?(?:\d{3}[-\s]?\d{3}[-\s]?\d{3}|\d{9})$/,
-                message: "Please enter a valid phone number with optional country code",
+                message: t('contact.form-error-phone-pattern'),
               },
             })}
             type="tel"
@@ -113,13 +113,13 @@ const Contact = ({ showMessage }) => {
           <label className="label-form">{t('contact.form-label-message')}:</label>
           <textarea
             {...register("message", {
-              required: "Message is required",
-              minLength: { value: 5, message: "Message must be at least 5 characters long" },
+              required: t('contact.form-error-message-required'),
+              minLength: { value: 5, message: t('contact.form-error-message-minLength') },
             })}
             className="input-form"
             id="message"
             name="message"
-            placeholder="Hello Ola, I want you to take beautiful photos of me!"
+            placeholder={t('contact.form-placeholder-message')}
           ></textarea>
           {errors.message && <p className="form-error">{errors.message.message}</p>}
 
@@ -131,7 +131,7 @@ const Contact = ({ showMessage }) => {
             </button>
           )}
           {formError && <p className="form-error">{formError}</p>}
-          {successForm && <p className="form-button">{t('form.message')}</p>}
+          {successForm && <p className="form-button">{t('contact.form-message')}</p>}
         </form>
       </div>
     </div>

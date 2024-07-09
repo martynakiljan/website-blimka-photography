@@ -13,7 +13,7 @@ const Process = () => {
             <div className="process__num">1.</div>
             <img className="process__icon " src={img1} alt="business"></img>
           </div>
-          <p className="process__description">   {t('process.process-text-2')}</p>
+          <p className="process__description">   {t('process.process-text-1')}</p>
         </div>
         <div className="process__item-main">
           <div className="process__item">
@@ -21,7 +21,7 @@ const Process = () => {
             <img className="process__icon" src={img1} alt="wedding"></img>
           </div>
           <p className="process__description">
-   {t('process.process-text-2')}
+         {t('process.process-text-2')}
           </p>
         </div>
         <div className="process__item-main">
@@ -30,7 +30,7 @@ const Process = () => {
             <img className="process__icon" src={img1} alt="family"></img>
           </div>
           <p className="process__description">
-   {t('process.process-text-3')}
+      {t('process.process-text-3')}
           </p>
         </div>
       </div>

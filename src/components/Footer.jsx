@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="footer">
       <img className="process__icon" src={img1}></img>
       <div className="footer_inner">
-        <p className="footer__copy">® 2024 Aleksanra Blimka Photography</p>
+        <p className="footer__copy">® 2024 Aleksanra Blimka Photo</p>
       </div>
     </footer>
   );
