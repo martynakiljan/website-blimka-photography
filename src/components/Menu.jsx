@@ -3,15 +3,23 @@ import { Cross as Hamburger } from "hamburger-react";
 import { useTranslation } from 'react-i18next';
 
 const Menu = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const [isOpen, setOpen] = useState(false);
 
-  const handleLinkClick = (e, sectionId) => {
-    e.preventDefault();
-    setOpen(false);
-    const section = document.getElementById(sectionId);
-    section?.scrollIntoView({ behavior: "smooth" });
-  };
+const handleLinkClick = (e, sectionId) => {
+  e.preventDefault();
+  setOpen(false);
+
+  const section = document.getElementById(sectionId);
+  if (section) {
+    const headerOffset = 50; 
+    const sectionTop = section.getBoundingClientRect().top + window.scrollY;
+    window.scrollTo({
+      top: sectionTop - headerOffset,
+      behavior: "smooth"
+    });
+  }
+};
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,7 +35,6 @@ const Menu = () => {
     };
   }, [isOpen]);
 
-  // Tłumaczenia menu mobilnego
   const mobileMenuTranslations = {
     'menu-link-1': t('menu.menu-link-1'),
     'menu-link-2': t('menu.menu-link-2'),
