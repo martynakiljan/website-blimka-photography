@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import img12 from "../assets/header-images/header-img-12.png";
 import { useTranslation } from 'react-i18next';
 
-
 const Header = () => {
     const { t } = useTranslation();
 

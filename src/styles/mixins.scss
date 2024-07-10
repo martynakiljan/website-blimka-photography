@@ -1,30 +1,26 @@
 :root {
-    --max-width: 1200px;
+  --max-width: 1200px;
 }
 
 $layout-breakpoints: (
-    xxs: 400px,
-    xs: 480px,
-    sm: 768px,
-    md: 992px,
-    lg: 1025px,
-    xl: 1330px,
+  xxs: 400px,
+  xs: 480px,
+  sm: 768px,
+  md: 992px,
+  lg: 1025px,
+  xl: 1330px,
 );
 $is-web: true;
 
-
-
 @mixin content-width {
-    max-width: var(--max-width);
-    margin: 0 auto;
-    padding: 0 20px;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px;
 
-    @include sm-min() {
-        padding: 0 40px
-    }
+  @include sm-min() {
+    padding: 0 40px;
+  }
 }
-
-
 
 /*
   Usage:
@@ -36,11 +32,11 @@ $is-web: true;
 */
 
 @mixin xs-min($print: false) {
-    @include mq-min-print(map-get($layout-breakpoints, xs), $print) {
-        @if $is-web ==true {
-            @content;
-        }
+  @include mq-min-print(map-get($layout-breakpoints, xs), $print) {
+    @if $is-web ==true {
+      @content;
     }
+  }
 }
 
 /*
@@ -52,11 +48,11 @@ $is-web: true;
   }
 */
 @mixin sm-min($print: false) {
-    @include mq-min-print(map-get($layout-breakpoints, sm), $print) {
-        @if $is-web ==true {
-            @content;
-        }
+  @include mq-min-print(map-get($layout-breakpoints, sm), $print) {
+    @if $is-web ==true {
+      @content;
     }
+  }
 }
 
 /*
@@ -68,11 +64,11 @@ $is-web: true;
   }
 */
 @mixin md-min($print: false) {
-    @include mq-min-print(map-get($layout-breakpoints, md), $print) {
-        @if $is-web ==true {
-            @content;
-        }
+  @include mq-min-print(map-get($layout-breakpoints, md), $print) {
+    @if $is-web ==true {
+      @content;
     }
+  }
 }
 
 /*
@@ -84,11 +80,11 @@ $is-web: true;
   }
 */
 @mixin lg-min($print: false) {
-    @include mq-min-print(map-get($layout-breakpoints, lg), $print) {
-        @if $is-web ==true {
-            @content;
-        }
+  @include mq-min-print(map-get($layout-breakpoints, lg), $print) {
+    @if $is-web ==true {
+      @content;
     }
+  }
 }
 
 /*
@@ -100,11 +96,11 @@ $is-web: true;
   }
 */
 @mixin xl-min($print: false) {
-    @include mq-min-print(map-get($layout-breakpoints, xl), $print) {
-        @if $is-web ==true {
-            @content;
-        }
+  @include mq-min-print(map-get($layout-breakpoints, xl), $print) {
+    @if $is-web ==true {
+      @content;
     }
+  }
 }
 
 /*
@@ -116,9 +112,9 @@ $is-web: true;
   }
 */
 @mixin xs-max($print: false) {
-    @include mq-max-print(map-get($layout-breakpoints, xs), $print) {
-        @content;
-    }
+  @include mq-max-print(map-get($layout-breakpoints, xs), $print) {
+    @content;
+  }
 }
 
 /*
@@ -130,9 +126,9 @@ $is-web: true;
   }
 */
 @mixin sm-max($print: false) {
-    @include mq-max-print(map-get($layout-breakpoints, sm), $print) {
-        @content;
-    }
+  @include mq-max-print(map-get($layout-breakpoints, sm), $print) {
+    @content;
+  }
 }
 
 /*
@@ -144,9 +140,9 @@ $is-web: true;
   }
 */
 @mixin md-max($print: false) {
-    @include mq-max-print(map-get($layout-breakpoints, md), $print) {
-        @content;
-    }
+  @include mq-max-print(map-get($layout-breakpoints, md), $print) {
+    @content;
+  }
 }
 
 /*
@@ -158,9 +154,9 @@ $is-web: true;
   }
 */
 @mixin lg-max($print: false) {
-    @include mq-max-print(map-get($layout-breakpoints, lg), $print) {
-        @content;
-    }
+  @include mq-max-print(map-get($layout-breakpoints, lg), $print) {
+    @content;
+  }
 }
 
 /*
@@ -172,9 +168,9 @@ $is-web: true;
   }
 */
 @mixin xl-max($print: false) {
-    @include mq-max-print(map-get($layout-breakpoints, xl), $print) {
-        @content;
-    }
+  @include mq-max-print(map-get($layout-breakpoints, xl), $print) {
+    @content;
+  }
 }
 
 /*
@@ -188,36 +184,36 @@ $is-web: true;
 */
 
 @mixin print($is-pdf: $is-pdf) {
-    @if $is-pdf ==true {
-        @media print {
-            @content;
-        }
+  @if $is-pdf ==true {
+    @media print {
+      @content;
     }
+  }
 }
 
 /*
   Helpers do not use
 */
 @mixin mq-min-print($breakpoint, $print: false) {
-    @media screen and (min-width: $breakpoint) {
-        @content;
-    }
+  @media screen and (min-width: $breakpoint) {
+    @content;
+  }
 
-    @if $print ==true {
-        @media print {
-            @content;
-        }
+  @if $print ==true {
+    @media print {
+      @content;
     }
+  }
 }
 
 @mixin mq-max-print($breakpoint, $print: false) {
-    @media (max-width: '#{$breakpoint - 1}') {
-        @content;
-    }
+  @media (max-width: '#{$breakpoint - 1}') {
+    @content;
+  }
 
-    @if $print ==true {
-        @media print {
-            @content;
-        }
+  @if $print ==true {
+    @media print {
+      @content;
     }
+  }
 }

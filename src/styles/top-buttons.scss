@@ -1,4 +1,4 @@
-.top-buttons{
+.top-buttons {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -15,7 +15,7 @@
   height: 25px;
   line-height: 25px;
   text-align: center;
-  background-color: $color-main!important;
+  background-color: $color-main !important;
   border: none;
   border-radius: 50%;
   cursor: pointer;
@@ -28,13 +28,13 @@
   margin-right: 10px;
 
   @include md-min {
-      width: 30px;
-  height: 30px;
-  line-height: 30px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
   }
 
   &:hover {
-    transform: scale(1.2)
+    transform: scale(1.2);
   }
 }
 
@@ -54,10 +54,10 @@
   font-size: 1.2rem;
   text-align: center;
   vertical-align: middle;
-  margin-top: -3px; 
+  margin-top: -3px;
 
   @include md-min {
-      width: 20px;
-  height: 20px;
+    width: 20px;
+    height: 20px;
   }
 }

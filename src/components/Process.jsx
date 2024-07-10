@@ -2,7 +2,8 @@ import img1 from "../assets/images/icon-flower.png";
 import { useTranslation } from 'react-i18next';
 
 const Process = () => {
-        const { t } = useTranslation();
+  const { t } = useTranslation();
+  
   return (
     <div className="process section">
       <h2 className="title process__title">{t('process.title')}</h2>

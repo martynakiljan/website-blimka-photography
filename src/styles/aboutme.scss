@@ -18,7 +18,7 @@
   border: 1px solid $color-bg;
   margin-left: -1px;
   z-index: 111;
-  
+
   @include md-min {
     width: 60%;
   }
@@ -27,14 +27,12 @@
     margin-top: 70px;
     margin-left: -50px;
     padding: 20px 30px;
-  
   }
 
   @include lg-min {
     width: 50%;
   }
 }
-
 
 .about__img {
   width: 100%;
@@ -49,7 +47,7 @@
   margin-bottom: 10px;
 
   @include md-min {
-      font-size: 30px;
+    font-size: 30px;
   }
 }
 
@@ -66,7 +64,7 @@
   padding: 20px 0;
 
   @include md-min {
-  padding: 30px 0;
+    padding: 30px 0;
   }
 }
 
@@ -76,7 +74,7 @@
   padding: 20px 0;
 
   @include md-min {
-          padding: 30px 0;
+    padding: 30px 0;
   }
 }
 
@@ -93,17 +91,18 @@
 
   span {
     padding: 15px 0;
-      font-family: "Parisienne", cursive;
+    font-family: "Parisienne", cursive;
   }
 
-    @include md-max {
-      font-size: 15px;
-    }
+  @include md-max {
+    font-size: 15px;
+  }
 }
 
+.about__description--italic {
+  font-style: italic;
+}
 
-  .about__description--italic {
-    font-style: italic;}
-
-    .about__description--heart {
-      font-style: normal;}
+.about__description--heart {
+  font-style: normal;
+}

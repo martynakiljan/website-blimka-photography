@@ -6,8 +6,8 @@
 
   @include md-min {
     display: block;
-width: 100%;
-padding: 0
+    width: 100%;
+    padding: 0;
   }
 }
 
@@ -48,7 +48,6 @@ padding: 0
   }
 }
 
-  
 .menu__list--link {
   font-size: 20px;
   display: block;
@@ -63,11 +62,9 @@ padding: 0
   &:hover {
     text-decoration: underline;
     text-underline-offset: 5px;
-     text-decoration-thickness: 1px;
+    text-decoration-thickness: 1px;
   }
 }
-  
-
 
 .menu__list-item {
   .menu-mobile & {
@@ -87,7 +84,7 @@ padding: 0
   background-image: url("../assets/images/logo.png");
   background-position: center;
 }
-  
+
 .menu-mobile__logo {
   background-repeat: no-repeat;
   background-size: contain;
@@ -97,8 +94,8 @@ padding: 0
   margin: 0 auto;
 
   @include md-min {
-     width: 150px;
-  height: 150px;
+    width: 150px;
+    height: 150px;
   }
 }
 
@@ -118,10 +115,12 @@ padding: 0
   right: 20px;
 
   & > div {
-    background: $color-main!important;}
+    background: $color-main !important;
+  }
 }
 
-  .menu__list--first {
-    @include md-min {
-      width: 180px;
-    }}
+.menu__list--first {
+  @include md-min {
+    width: 180px;
+  }
+}

@@ -11,12 +11,11 @@ const Projects = () => {
       <h2 className="title title-small">
             {t('projects.title')}
       </h2>
-
       <div className="projects__composition">
-        <img className="project__img small-img-1 " src={img2}></img>
-        <img className="project__img big-img" src={img1}></img>
-        <img className="project__img medium-img " src={img4}></img>
-        <img className="project__img  small-img-2" src={img3}></img>
+        <img className="project__img small-img-1 " src={img2} alt="couple"></img>
+        <img className="project__img big-img" src={img1} alt="couple"></img>
+        <img className="project__img medium-img " src={img4} alt="couple"></img>
+        <img className="project__img  small-img-2" src={img3} alt="couple"></img>
       </div>
     </div>
   );

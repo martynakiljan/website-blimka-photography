@@ -8,22 +8,19 @@ import { useTranslation } from 'react-i18next';
 
 
 const Instagram = () => {
-
-      const { t } = useTranslation();
-
+  const { t } = useTranslation();
 
   return (
     <div className="instagram section">
       <h2 className="title">{t('instagram.title')}</h2>
       <div className="instagram__images">
-        <img className="instagram__img " src={img1} />
-        <img className="instagram__img " src={img2} />
-        <img className="instagram__img " src={img3} />
-        <img className="instagram__img " src={img4} />
-        <img className="instagram__img " src={img5} />
-        <img className="instagram__img " src={img6} />
+        <img className="instagram__img " src={img1} alt="family"/>
+        <img className="instagram__img " src={img2} alt="couple"/>
+        <img className="instagram__img " src={img3} alt="family"/>
+        <img className="instagram__img " src={img4} alt="couple"/>
+        <img className="instagram__img " src={img5} alt="family"/>
+        <img className="instagram__img " src={img6} alt="couple"/>
       </div>
-
       <a href="https://www.instagram.com/aleksandrablimka_photo/" className="instagram__button">@aleksandrablimka_photo</a>
     </div>
   );

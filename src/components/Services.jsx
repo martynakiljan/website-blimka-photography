@@ -12,32 +12,32 @@ const Services = () => {
       </h2>
       <div className="services__cards">
         <div className="services__card">
-          <img className="services__card-img services__card-img--1" src={img1} />
+          <img className="services__card-img services__card-img--1" src={img1} alt="couple"/>
           <div className="services__card-box">
             <p className="services__card__description">
-                  {t('services.card-text-1a')} <br></br>
-                     {t('services.card-text-1b')} 
+               {t('services.card-text-1a')} <br></br>
+               {t('services.card-text-1b')} 
             </p>
           </div>
         </div>
         <div className="services__card">
-          <img className="services__card-img  services__card-img--2" src={img2} />
+          <img className="services__card-img  services__card-img--2" src={img2} alt="couple" />
           <div className="services__card-box">
             <p className="services__card__description">
               {t('services.card-text-2a')} <br></br>
-                     {t('services.card-text-2b')} 
+              {t('services.card-text-2b')} 
               <br></br>
               <p></p>
             </p>
           </div>
         </div>
         <div className="services__card">
-          <img className="services__card-img" src={img3} />
+          <img className="services__card-img" src={img3} alt="couple"/>
           <div className="services__card-box">
             <p className="services__card__description">
            {t('services.card-text-3a')} 
-           <br></br>
-                     {t('services.card-text-3b')} 
+              <br></br>
+              {t('services.card-text-3b')} 
               <br></br>
             </p>
           </div>

@@ -45,7 +45,7 @@ const Contact = ({ showMessage }) => {
         () => {
           console.log('SUCCESS!');
           setSuccessForm(true);
-          resetForm(); // reset form inputs
+          resetForm(); 
           setTimeout(() => {
             setSuccessForm(false);
           }, 3000);
