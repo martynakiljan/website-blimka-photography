@@ -1,36 +1,48 @@
 .projects__composition {
   display: grid;
-  grid-template-columns: 2fr 1fr; /* Pierwsza kolumna ma 2/3 szerokości, druga kolumna 1/3 szerokości */
-  grid-template-rows: 1fr 1fr; /* Dwa równe rzędy */
-  gap: 10px;
+  grid-template-columns: 2fr 1fr; 
+  grid-template-rows: 1fr 1fr;
+  gap: 0;
   margin-left: -5px;
   margin-right: -5px;
 }
 
 .big-img {
-  grid-area: 1 / 1 / span 2 / span 1; /* Rozciąga się na dwa rzędy i zajmuje pierwszą kolumnę */
+  grid-area: 1 / 1 / span 2 / span 1; 
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border: 5px solid #f1ebe4;
+  border: 2px solid #f1ebe4;
+
+    @include md-min {
+      border: 5px solid #f1ebe4;
+  }
 }
 
 .medium-img {
-  display: none; /* Ukryj medium-img na razie */
+  display: none; 
 }
 
 .small-img-1 {
-  grid-area: 1 / 2 / span 1 / span 1; /* Zajmuje pierwszy rząd i drugą kolumnę */
+  grid-area: 1 / 2 / span 1 / span 1; 
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border: 5px solid #f1ebe4;
+  border: 2px solid #f1ebe4;
+
+  @include md-min {
+      border: 5px solid #f1ebe4;
+  }
 }
 
 .small-img-2 {
-  grid-area: 2 / 2 / span 1 / span 1; /* Zajmuje drugi rząd i drugą kolumnę */
+  grid-area: 2 / 2 / span 1 / span 1; 
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border: 5px solid #f1ebe4;
+  border: 2px solid #f1ebe4;
+
+    @include md-min {
+      border: 5px solid #f1ebe4;
+  }
 }
