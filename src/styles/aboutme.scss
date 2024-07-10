@@ -14,7 +14,7 @@
   margin-top: -70px;
   background-color: $color-main;
   width: 95%;
-  padding: 10px;
+  padding: 20px;
   border: 1px solid $color-bg;
   margin-left: -1px;
 
@@ -102,3 +102,6 @@
 
   .about__description--italic {
     font-style: italic;}
+
+    .about__description--heart {
+      font-style: normal;}

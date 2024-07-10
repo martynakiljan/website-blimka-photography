@@ -26,7 +26,7 @@ const AboutMe = () => {
           </p>
           <br></br>
                 <p className="about__description about__description--italic">
-         {t('about.about-description-4')} 💛
+         {t('about.about-description-4')}  <span className="about__description--heart">💛</span>
           </p>
           {/* <p className="about__love-title">{t('about.about-love-title')}</p>
           <div className="about__love">

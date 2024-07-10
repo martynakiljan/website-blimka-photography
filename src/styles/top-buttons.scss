@@ -11,11 +11,11 @@
 .top-button__item {
   display: inline-block;
   position: relative;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
   text-align: center;
-  background-color: $color-main;
+  background-color: $color-main!important;
   border: none;
   border-radius: 50%;
   cursor: pointer;
@@ -27,6 +27,12 @@
   transition: color 0.3s ease;
   margin-right: 10px;
 
+  @include md-min {
+      width: 30px;
+  height: 30px;
+  line-height: 30px;
+  }
+
   &:hover {
     transform: scale(1.2)
   }
@@ -34,16 +40,24 @@
 
 .top-button__insta {
   display: inline-block;
-  margin-left: 5px;
+
+  @include md-min {
+    margin-left: 5px;
+  }
 }
 
 .instagram-icon {
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   line-height: 20px;
   color: $color-bg;
   font-size: 1.2rem;
   text-align: center;
   vertical-align: middle;
   margin-top: -2px; 
+
+  @include md-min {
+      width: 20px;
+  height: 20px;
+  }
 }
