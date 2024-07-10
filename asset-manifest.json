@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/website-blimka-photography/static/css/main.11085ade.css",
+    "main.css": "/website-blimka-photography/static/css/main.63e90b3e.css",
     "main.js": "/website-blimka-photography/static/js/main.dfc7c2e3.js",
     "static/js/453.ed3810f9.chunk.js": "/website-blimka-photography/static/js/453.ed3810f9.chunk.js",
     "static/media/servies-img-1.jpg": "/website-blimka-photography/static/media/servies-img-1.f430aa6030dcecba1b62.jpg",
@@ -21,12 +21,12 @@
     "static/media/icon-flower.png": "/website-blimka-photography/static/media/icon-flower.c3e6c74245565168013f.png",
     "static/media/logo.png": "/website-blimka-photography/static/media/logo.3a766421ad361cdff551.png",
     "index.html": "/website-blimka-photography/index.html",
-    "main.11085ade.css.map": "/website-blimka-photography/static/css/main.11085ade.css.map",
+    "main.63e90b3e.css.map": "/website-blimka-photography/static/css/main.63e90b3e.css.map",
     "main.dfc7c2e3.js.map": "/website-blimka-photography/static/js/main.dfc7c2e3.js.map",
     "453.ed3810f9.chunk.js.map": "/website-blimka-photography/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.11085ade.css",
+    "static/css/main.63e90b3e.css",
     "static/js/main.dfc7c2e3.js"
   ]
 }
