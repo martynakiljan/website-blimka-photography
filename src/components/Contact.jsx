@@ -14,15 +14,16 @@ const Contact = ({ showMessage }) => {
   const {
     register,
     handleSubmit,
-    reset,
-    formState: { errors, isValid },
+    reset: resetForm,
+    formState: { errors },
   } = useForm({ mode: 'onChange' });
 
   useEffect(() => {
     if (showMessage) {
-      reset();
+      resetForm();
+      setSuccessForm(false);
     }
-  }, [showMessage, reset]);
+  }, [showMessage, resetForm]);
 
   const onSubmitHandler = (data) => {
     setFormError('');
@@ -32,13 +33,19 @@ const Contact = ({ showMessage }) => {
   const sendEmailFun = (data) => {
     setLoading(true);
     emailjs
-      .sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, form.current, {
-        publicKey: process.env.REACT_APP_EMAILJS_USER_ID,
-      })
+      .sendForm(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        form.current,
+        {
+          publicKey: process.env.REACT_APP_EMAILJS_USER_ID,
+        }
+      )
       .then(
         () => {
           console.log('SUCCESS!');
           setSuccessForm(true);
+          resetForm(); // reset form inputs
           setTimeout(() => {
             setSuccessForm(false);
           }, 3000);
@@ -74,7 +81,7 @@ const Contact = ({ showMessage }) => {
             })}
             type="text"
             name="firstName"
-            id="firstName"
+            id="name"
             className="input-form"
           />
           {errors.firstName && <p className="form-error">{errors.firstName.message}</p>}
@@ -116,7 +123,7 @@ const Contact = ({ showMessage }) => {
               required: t('contact.form-error-message-required'),
               minLength: { value: 5, message: t('contact.form-error-message-minLength') },
             })}
-            className="input-form"
+            className="input-form large-textarea"
             id="message"
             name="message"
             placeholder={t('contact.form-placeholder-message')}

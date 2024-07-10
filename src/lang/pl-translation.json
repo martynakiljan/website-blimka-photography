@@ -32,8 +32,8 @@
   },
   "process": {
     "title": "Proces",
-    "process-text-1": "Zacznijmy od rozmowy! Skontaktuj się ze mną.",
-    "process-text-2": "Ustalimy szczegóły. Razem wybierzemy lokalizację i datę.",
+    "process-text-1": "Zacznijmy od rozmowy! Skontaktuj się ze mną za pomocą formularza kontaktowego.",
+    "process-text-2": "Ustalimy szczegóły. Razem wybierzemy lokalizację i datę sesji.",
     "process-text-3": "Robimy sesję! Otrzymasz piękne wspomnienia na całe życie..."
   },
   "projects": {
@@ -46,7 +46,7 @@
     "title": "Teraz, gdy już trochę mnie i moją pracę poznałeś, pomóż mi poznać Ciebie!",
     "button-text": "Wyślij!",
     "form-message": "Dziękuję! ​​Odezwę się wkrótce!",
-    "form-label-name": "Twoje imie:",
+    "form-label-name": "Twoje imię:",
     "form-label-email": "Twoj email:",
     "form-label-number": "Twoj telefon:",
     "form-label-message": "Twoja wiadomość",

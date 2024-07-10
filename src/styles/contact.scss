@@ -41,11 +41,16 @@ color: $color-main;
 }
 
   .form-error {
-    color: brown;
+    color: $color-error;
     font-size: 10px;
  }
 
 
 .form__button:disabled {
   cursor: not-allowed;
+}
+
+  .large-textarea {
+  min-height: 100px; 
+  resize: vertical; 
 }

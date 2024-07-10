@@ -120,3 +120,8 @@ padding: 0
   & > div {
     background: $color-main!important;}
 }
+
+  .menu__list--first {
+    @include md-min {
+      width: 180px;
+    }}

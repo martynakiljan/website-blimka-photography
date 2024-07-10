@@ -17,7 +17,8 @@
   padding: 20px;
   border: 1px solid $color-bg;
   margin-left: -1px;
-
+  z-index: 111;
+  
   @include md-min {
     width: 60%;
   }
@@ -35,8 +36,9 @@
 }
 
 
-.abotu__img {
+.about__img {
   width: 100%;
+  max-height: 900px;
 }
 
 .about__title {

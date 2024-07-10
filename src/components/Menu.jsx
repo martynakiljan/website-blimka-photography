@@ -48,7 +48,7 @@ const handleLinkClick = (e, sectionId) => {
         <div className="menu__menu">
           <ul className="menu__list">
             <li className="menu__list-item">
-              <a className="menu__list--link" href="#home">
+              <a className="menu__list--link menu__list--first" href="#home">
                 {t('menu.menu-link-1')}
               </a>
             </li>
