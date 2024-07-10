@@ -6,7 +6,8 @@
   border: 1px solid $color-main;
   font-family: "Work Sans", sans-serif;
   width: 100%;
-
+    font-size: 11px;
+    
   @include md-min {
     width: 50%;
   }
