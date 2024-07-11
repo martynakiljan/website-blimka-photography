@@ -44,7 +44,7 @@
   .menu-mobile.isOpen & {
     opacity: 1;
     visibility: visible;
-    margin-top: 30px;
+    margin-top: 27px;
   }
 }
 
@@ -60,9 +60,12 @@
   }
 
   &:hover {
-    text-decoration: underline;
-    text-underline-offset: 5px;
-    text-decoration-thickness: 1px;
+    @include md-min {
+        text-decoration: underline;
+        text-underline-offset: 5px;
+        text-decoration-thickness: 1px;
+    }
+      font-weight: 500;
   }
 }
 
@@ -88,8 +91,8 @@
 .menu-mobile__logo {
   background-repeat: no-repeat;
   background-size: contain;
-  width: 130px;
-  height: 130px;
+  width: 150px;
+  height: 150px;
   background-image: url("../assets/images/logo.png");
   margin: 0 auto;
 
