@@ -1,22 +1,26 @@
-.scroll-to-top
-  background-color: $color-main!important
-  border-radius: 50%!important
-  color: $color-bg!important
-  border: 1px solid $color-bg!important
-  z-index: 11111
-  animation: jump 1s ease-in-out infinite
-  bottom: 50px!important
-  right: 20px!important
+.scroll-to-top {
+  border-radius: 50%!important;
+  color: $color-bg!important;
+  border: 1px solid $color-bg!important;
+  z-index: 11111;
+  animation: jump 1s ease-in-out infinite;
+  bottom: 50px!important;
+  right: 20px!important;
 
-  @include md-min
-    bottom: 100px!important
+  @include md-min {
+    bottom: 100px!important;
+  }
+}
 
-@keyframes jump
-  0%, 100%
-    transform: translateY(0)
+@keyframes jump {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
 
-  50%
-    transform: translateY(-10px)
-
-.jump-animation
-  animation: jump 1s ease-in-out infinite; /* Definicja animacji: jump, 1 sekunda, ease-in-out, nieskończona liczba powtórzeń */
+.jump-animation {
+  animation: jump 1s ease-in-out infinite; 
+}
