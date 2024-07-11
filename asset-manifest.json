@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/website-blimka-photography/static/css/main.4f8e3195.css",
-    "main.js": "/website-blimka-photography/static/js/main.8eeef884.js",
+    "main.css": "/website-blimka-photography/static/css/main.fffe719c.css",
+    "main.js": "/website-blimka-photography/static/js/main.22ee509f.js",
     "static/js/453.ed3810f9.chunk.js": "/website-blimka-photography/static/js/453.ed3810f9.chunk.js",
     "static/media/servies-img-1.jpg": "/website-blimka-photography/static/media/servies-img-1.f430aa6030dcecba1b62.jpg",
     "static/media/instagram-img-4.jpg": "/website-blimka-photography/static/media/instagram-img-4.19fc2a9efa7a0e1e4def.jpg",
@@ -11,22 +11,22 @@
     "static/media/project-img-1.jpg": "/website-blimka-photography/static/media/project-img-1.6a4f0f4e571036912d88.jpg",
     "static/media/servies-img-2.jpg": "/website-blimka-photography/static/media/servies-img-2.08de6316993ed9b7c0ff.jpg",
     "static/media/instagram-img-2.jpg": "/website-blimka-photography/static/media/instagram-img-2.7e6ba0253abf6c85517d.jpg",
+    "static/media/header-img-main.png": "/website-blimka-photography/static/media/header-img-main.a67bb1339445393159da.png",
     "static/media/project-img-2.jpg": "/website-blimka-photography/static/media/project-img-2.fe160a42b4ada3a1d114.jpg",
     "static/media/about.jpg": "/website-blimka-photography/static/media/about.12bb554df546f6ae2ce0.jpg",
     "static/media/project-img-3.jpg": "/website-blimka-photography/static/media/project-img-3.1814689fca9b79a7cd09.jpg",
     "static/media/instagram-img-3.jpg": "/website-blimka-photography/static/media/instagram-img-3.866ba3dd96e75e172e88.jpg",
     "static/media/instagram-img-5.jpg": "/website-blimka-photography/static/media/instagram-img-5.e2b1633326373e67cb9c.jpg",
     "static/media/project-img-4.jpg": "/website-blimka-photography/static/media/project-img-4.e4d8f0baaebca9838302.jpg",
-    "static/media/header-img-main.png": "/website-blimka-photography/static/media/header-img-main.52427786fce3f19bd0d9.png",
     "static/media/icon-flower.png": "/website-blimka-photography/static/media/icon-flower.c3e6c74245565168013f.png",
     "static/media/logo.png": "/website-blimka-photography/static/media/logo.3a766421ad361cdff551.png",
     "index.html": "/website-blimka-photography/index.html",
-    "main.4f8e3195.css.map": "/website-blimka-photography/static/css/main.4f8e3195.css.map",
-    "main.8eeef884.js.map": "/website-blimka-photography/static/js/main.8eeef884.js.map",
+    "main.fffe719c.css.map": "/website-blimka-photography/static/css/main.fffe719c.css.map",
+    "main.22ee509f.js.map": "/website-blimka-photography/static/js/main.22ee509f.js.map",
     "453.ed3810f9.chunk.js.map": "/website-blimka-photography/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4f8e3195.css",
-    "static/js/main.8eeef884.js"
+    "static/css/main.fffe719c.css",
+    "static/js/main.22ee509f.js"
   ]
 }
