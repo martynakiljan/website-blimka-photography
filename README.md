@@ -1,4 +1,4 @@
-Website in progress...
+
 <h2>Website  Blimka Photography</h2>
 
 -------
