@@ -1,33 +1,33 @@
-@import "./mixins";
-@import "./variables";
+@import './mixins';
+@import './variables';
 
 *,
 *:before,
 *:after {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 200px;
+	scroll-behavior: smooth;
+	scroll-padding-top: 200px;
 }
 
 .App {
-  max-width: 1200px;
-  margin: 0 auto;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 body {
-  background-color: $color-bg;
-  font-family: "Work Sans", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 12px;
-  overflow-x: hidden;
+	background-color: $color-bg;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 12px;
+	overflow-x: hidden;
 
-  @include md-min {
-    font-size: 16px;
-  }
+	@include md-min {
+		font-size: 16px;
+	}
 }
 
 html,
@@ -81,81 +81,81 @@ header,
 nav,
 section,
 video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  vertical-align: baseline;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  text-size-adjust: none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	text-size-adjust: none;
 }
 
 li {
-  list-style-type: none;
-  list-style: none;
+	list-style-type: none;
+	list-style: none;
 }
 
 input {
-  border-radius: 0;
-  outline: none;
+	border-radius: 0;
+	outline: none;
 }
 
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 .wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
 
-  @include xl-min {
-    padding: 0;
-  }
+	@include xl-min {
+		padding: 0;
+	}
 }
 
 img {
-  width: 100%;
-  display: block;
+	width: 100%;
+	display: block;
 }
 
 button {
-  cursor: pointer;
-  font-size: 12px;
+	cursor: pointer;
+	font-size: 12px;
 
-  @include md-min {
-    font-size: 16px;
-  }
+	@include md-min {
+		font-size: 16px;
+	}
 }
 
 .section {
-  margin-bottom: 50px;
+	margin-bottom: 70px;
 
-  @include md-min {
-    margin-bottom: 100px;
-  }
+	@include md-min {
+		margin-bottom: 100px;
+	}
 }
 
 .title {
-  font-family: "Parisienne", cursive;
-  font-size: 30px;
-  padding-bottom: 50px;
-  font-weight: lighter;
-  margin: 0 auto;
-  color: $color-main;
+	font-family: 'Parisienne', cursive;
+	font-size: 30px;
+	padding-bottom: 70px;
+	font-weight: lighter;
+	margin: 0 auto;
+	color: $color-main;
 
-  @include md-min {
-    font-size: 50px;
-    padding-bottom: 100px;
-  }
+	@include md-min {
+		font-size: 50px;
+		padding-bottom: 100px;
+	}
 
-  &.title-small {
-    @include md-min {
-      font-size: 40px;
-    }
-  }
+	&.title-small {
+		@include md-min {
+			font-size: 40px;
+		}
+	}
 }
 
 a {
-  color: unset;
+	color: unset;
 }
