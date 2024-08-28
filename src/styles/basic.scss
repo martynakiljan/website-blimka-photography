@@ -134,6 +134,14 @@ button {
 	@include md-min {
 		margin-bottom: 100px;
 	}
+
+	&.instagram {
+		margin-bottom: 80px;
+
+		@include md-min {
+			margin-bottom: 115px;
+		}
+	}
 }
 
 .title {
